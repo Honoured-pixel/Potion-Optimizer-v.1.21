@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "potionoptimizer",
+	"version": "0.1.0",
+	"name": "Potion Optimizer",
+	"description": "Shows your potions the moment you throw them, instead of waiting on the server. Great on high ping.",
+	"authors": [
+		"h.azard"
+	],
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/potionoptimizer/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.hazard.potionoptimizer.PotionOptimizerClient"
+		],
+		"modmenu": [
+			"dev.hazard.potionoptimizer.PotionOptimizerModMenuIntegration"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*",
+		"cloth-config": "*",
+		"modmenu": "*"
+	}
+}
